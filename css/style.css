@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Stars background effect */
+/* Stars background */
 body::before {
   content: '';
   position: fixed;

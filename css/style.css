@@ -1,16 +1,10 @@
-/* Base & fonts */
+/* Base styling */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Orbitron', sans-serif;
-  background: radial-gradient(circle at bottom, #0a0a1e 0%, #000 100%);
+  background: radial-gradient(circle at bottom, #0a0a1e 0%, #000000 100%);
   color: #e0e0e0;
   overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 /* Navbar */
@@ -25,12 +19,6 @@ a {
   z-index: 1000;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #8b5cf6;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -38,9 +26,10 @@ a {
 }
 
 .nav-links a {
-  font-size: 1rem;
-  padding: 8px 12px;
-  transition: color 0.3s;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .nav-links a:hover,
@@ -48,24 +37,23 @@ a {
   color: #8b5cf6;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 90vh;
-  background: url('https://i.ibb.co/7YvDqNz/stars.png') center/cover no-repeat, linear-gradient(#1e3a8a, #5b21b6);
-  position: relative;
+  background: url('../images/hero-bg.jpg') center/cover no-repeat, linear-gradient(#1e3a8a, #5b21b6);
   text-align: center;
   color: #fff;
-  padding: 0 20px;
+  position: relative;
 }
 
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.4);
 }
 
 .hero-text {
